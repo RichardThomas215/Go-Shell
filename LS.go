@@ -2,10 +2,7 @@ package main
 
 import "fmt"
 
-func bye(){
-	fmt.Println("hello BYYYYEEE!!")
-}
 
-func ls(){
+func ls(comand []string){
 	fmt.Println("yooo")
 }

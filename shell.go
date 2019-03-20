@@ -6,13 +6,15 @@ import ("fmt"
 
 func main() {
 
-	scanner := bufio.NewScanner(os.Stdin)
+	  scanner := bufio.NewScanner(os.Stdin)
 
  	 fmt.Print("Enter Command? ")
 
 	 scanner.Scan()
 	 
 	fmt.Print( scanner.Text(), "\n" )
+
+	bye()
 
 
 

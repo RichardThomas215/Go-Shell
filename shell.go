@@ -2,18 +2,24 @@ package main
 
 import ("fmt"
 		"bufio"
-		"os")
+		"os"
+		"strings")
 
 func main() {
 
-	  scanner := bufio.NewScanner(os.Stdin)
+	scanner := bufio.NewScanner(os.Stdin)
 
- 	 fmt.Print("Enter Command? ")
+ 	fmt.Print("Enter Command? ")
 
-	 scanner.Scan()
+	scanner.Scan()
 	 
 	fmt.Print( scanner.Text(), "\n" )
 
+	commandArray := strings.Fields(scanner.Text())
+
+	for _, v:= range commandArray{
+		fmt.Println(v)
+	}
 	bye()
 
 

@@ -17,6 +17,12 @@ func main() {
 
 	commandArray := strings.Fields(scanner.Text())
 
+	switch [0]commandArray {
+	case "ls":
+		ls()
+	}
+
+
 	for _, v:= range commandArray{
 		fmt.Println(v)
 	}

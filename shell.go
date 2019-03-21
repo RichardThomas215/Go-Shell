@@ -20,8 +20,9 @@ func main() {
 	commandArray := strings.Fields(scanner.Text())
 	
 	if commandArray[0] == "ls" {
-
+		
 		ls( commandArray )
+
 	} else if commandArray[0] == "end" {
 
 		break

@@ -39,7 +39,11 @@ func displayFileInfo(fileName string){
         if stat, ok := sys.(*syscall.Stat_t);  ok {
             nlink = uint64(stat.Nlink) 
         }
-    }
-    fmt.Println(nlink);
+	}
+	
+	fmt.Print(nlink, " ");
+	fmt.Println(os.Getgid());
+	
+
 }
 	//fmt.Println(info.Size())

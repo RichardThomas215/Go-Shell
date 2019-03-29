@@ -24,14 +24,14 @@ func main() {
 		
 		ls( commandArray )
 
-	} else if commandArray[0] == "end" {
-
-		break
-
 	} else if commandArray[0] == "pwd"{
 		pwd()
 	 
-	}else {
+	}else if commandArray[0] == "end" {
+
+		break
+
+	} else {
 
 		fmt.Printf("Command '%s' not found \n", strings.Join(commandArray, " ") )
 	}

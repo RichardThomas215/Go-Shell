@@ -42,8 +42,15 @@ func displayFileInfo(fileName string){
 	}
 	
 	fmt.Print(nlink, " ");
+
+	getGroupandUserNames()
 	fmt.Println(os.Getgid());
 	
 
+}
+
+func getGroupandUserNames() {
+
+	
 }
 	//fmt.Println(info.Size())

@@ -10,13 +10,14 @@ func main() {
 
 	for {
 
-	
+	// new scanner
 	scanner := bufio.NewScanner(os.Stdin)
 
  	fmt.Print("Go Shell> ")
 
 	scanner.Scan() 
 
+	// parse input into an array 
 	commandArray := strings.Fields(scanner.Text())
 	
 	if commandArray[0] == "ls" {

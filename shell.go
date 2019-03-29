@@ -28,6 +28,9 @@ func main() {
 
 		break
 
+	} else if commandArray[0] == "pwd"{
+		pwd()
+	 
 	}else {
 
 		fmt.Printf("Command '%s' not found \n", strings.Join(commandArray, " ") )

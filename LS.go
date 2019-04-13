@@ -4,6 +4,7 @@ import (
 	"fmt"
 //	"io/ioutil"
 	"os"
+	"os/user"
 	"syscall"
 )
 
@@ -44,13 +45,21 @@ func displayFileInfo(fileName string){
 	fmt.Print(nlink, " ");
 
 	getGroupandUserNames()
-	fmt.Println(os.Getgid());
+	//fmt.Println(os.Getgid());
 	
 
 }
 
 func getGroupandUserNames() {
 
+	groupCharactheristics, err:= user.LookupGroupId( string(os.Getegid())  );
+
+	if err != nil{
+
+		
+	fmt.Println(err);
+	}
 	
+	fmt.Println(groupCharactheristics);
 }
-	//fmt.Println(info.Size())
+	

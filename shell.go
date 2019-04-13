@@ -27,6 +27,9 @@ func main() {
 	} else if commandArray[0] == "pwd"{
 		pwd()
 	 
+	}else if commandArray[0] == "zip"{
+
+		zipUp(commandArray)
 	}else if commandArray[0] == "end" {
 
 		break
@@ -34,6 +37,7 @@ func main() {
 	} else {
 
 		fmt.Printf("Command '%s' not found \n", strings.Join(commandArray, " ") )
+		
 	}
 		
 

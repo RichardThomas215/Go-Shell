@@ -4,6 +4,7 @@ import (
     "archive/zip"
     "log"
     "os"
+    "io/ioutil"
 )
 
 func zipUp(filesToArchive  [] string) {
@@ -23,15 +24,15 @@ func zipUp(filesToArchive  [] string) {
     // .zip file we created at the beginning
     for i := 1 ; i< len(filesToArchive); i++ {
 
-            _, err := zipWriter.Create(filesToArchive[i])
+            fileWriter, err := zipWriter.Create(filesToArchive[i])
             if err != nil {
                     log.Fatal(err)
 			}
-			
-            //   _, err = fileWriter.Write([]byte(file.Body))
-            //   if err != nil {
-            //           log.Fatal(err)
-            //   }
+			data, err:= ioutil.ReadFile(filesToArchive[i])
+               _, err = fileWriter.Write([]byte( data))
+              if err != nil {
+                      log.Fatal(err)
+               }
     }
 
     // Clean up

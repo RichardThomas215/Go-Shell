@@ -28,7 +28,8 @@ func zipUp(filesToArchive  [] string) {
             if err != nil {
                     log.Fatal(err)
 			}
-			data, err:= ioutil.ReadFile(filesToArchive[i])
+            data, err:= ioutil.ReadFile(filesToArchive[i])
+            
                _, err = fileWriter.Write([]byte( data))
               if err != nil {
                       log.Fatal(err)

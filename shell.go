@@ -1,47 +1,51 @@
 package main
 
-import ("fmt"
-		"bufio"
-		"os"
-		"strings")
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strings"
+)
 
 func main() {
 
-
 	for {
 
-	// new scanner
-	scanner := bufio.NewScanner(os.Stdin)
+		// new scanner
+		scanner := bufio.NewScanner(os.Stdin)
 
- 	fmt.Print("Go Shell> ")
+		fmt.Print("Go Shell> ")
 
-	scanner.Scan() 
+		scanner.Scan()
 
-	// parse input into an array 
-	commandArray := strings.Fields(scanner.Text())
-	
-	if commandArray[0] == "ls" {
-		
-		ls( commandArray )
+		// parse input into an array
+		commandArray := strings.Fields(scanner.Text())
 
-	} else if commandArray[0] == "pwd"{
-		pwd()
-	 
-	}else if commandArray[0] == "zip"{
+		if commandArray[0] == "ls" {
 
-		zipUp(commandArray)
-	}else if commandArray[0] == "end" {
+			ls(commandArray)
 
-		break
+		} else if commandArray[0] == "pwd" {
+			pwd()
 
-	} else {
+		} else if commandArray[0] == "zip" {
 
-		fmt.Printf("Command '%s' not found \n", strings.Join(commandArray, " ") )
-		
+			zipUp(commandArray)
+
+		} else if commandArray[0] == "cd" {
+
+			changeDirectory(commandArray[1])
+
+		} else if commandArray[0] == "end" {
+
+			break
+
+		} else {
+
+			fmt.Printf("Command '%s' not found \n", strings.Join(commandArray, " "))
+
+		}
+
 	}
-		
-
-}
-
 
 }

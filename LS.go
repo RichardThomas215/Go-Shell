@@ -2,25 +2,32 @@ package main
 
 import (
 	"fmt"
-
-	//	"io/ioutil"
+	"io/ioutil"
 	"os"
 	"os/user"
 	"strconv"
 	"syscall"
-	//"time"
 )
 
 func ls(command []string) {
 
-	if len(command) <= 2 {
+	if len(command) <= 3 {
 
-		if command[1] != "-al" {
+		if len(command) == 1 {
 
-			displayFileInfo(command[1])
+			getDirectoryContents()
 
+		} else {
+
+			if command[1] == "-l" {
+
+				displayFileInfo(command[2])
+
+			} else if command[1] == "-al" {
+
+				displayFileInfo(command[2])
+			}
 		}
-
 	} else {
 
 		for i := 1; i < len(command); i++ {
@@ -29,6 +36,18 @@ func ls(command []string) {
 		}
 	}
 
+}
+
+func getDirectoryContents() {
+
+	currentDir, _ := os.Getwd()
+
+	directoryFiles, _ := ioutil.ReadDir(currentDir)
+
+	for _, fileName := range directoryFiles {
+
+		fmt.Println(fileName.Name())
+	}
 }
 
 func displayFileInfo(fileName string) {

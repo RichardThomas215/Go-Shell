@@ -1,7 +1,12 @@
 package main
 
+import "os"
+
 func mkdir(name string) {
 
-	//os.Mkdir(name)
+	path := pwd()
+
+	path = path + name
+	os.MkdirAll(name, 0771)
 
 }

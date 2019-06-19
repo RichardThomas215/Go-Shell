@@ -26,7 +26,7 @@ func main() {
 			ls(commandArray)
 
 		} else if commandArray[0] == "pwd" {
-			pwd()
+			fmt.Println(pwd())
 
 		} else if commandArray[0] == "zip" {
 
@@ -34,7 +34,19 @@ func main() {
 
 		} else if commandArray[0] == "cd" {
 
-			changeDirectory(commandArray[1])
+			changeDirectory(commandArray)
+
+		} else if commandArray[0] == "mkdir" {
+
+			mkdir(commandArray[1])
+
+		} else if commandArray[0] == "touch" {
+
+			touch(commandArray[1])
+
+		} else if commandArray[0] == "rm" {
+
+			rm(commandArray[1])
 
 		} else if commandArray[0] == "end" {
 

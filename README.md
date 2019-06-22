@@ -8,7 +8,7 @@ Unix based shell built in Go-Lang
  <br> <b>ls</b> </br>
   <b>pwd</b> 
   <br><b>touch</b></br>
-  </br> <b>mkdir</b> </br>
+   <b>mkdir</b> 
 
   ## Custom Commands
    <b>zip</b>

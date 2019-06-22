@@ -3,10 +3,13 @@ Unix based shell built in Go-Lang
 
 ## Commands Supported
 
-  <b>cd</b>
-  <b>rm</b>
-  <b>ls</b>
-  <b>pwd</b>
-  <b>touch</b>
-  <b>mkdir </b>
+  <br> <b>cd</b> </br>
+ <br> <b>rm</b> </br>
+ <br> <b>ls</b> </br>
+ <br> <b>pwd</b> </br>
+  <br> <b>touch</b> </br>
+  </br> <b>mkdir</b> </br>
+
+  ### custom commands
+   <b>zip</b>
 

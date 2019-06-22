@@ -12,6 +12,6 @@ Unix based shell built in Go-Lang
 
   ## Custom Commands
    <b>zip</b> - puts all files listed into a zip file called files.zip
-    <li>ex: zip LS.go touch.go pwd.go ..</li>
+    <li>ex: zip LS.go touch.go pwd.go </li>
 
 

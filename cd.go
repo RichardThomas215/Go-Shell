@@ -4,9 +4,22 @@ import (
 	"os"
 )
 
-func changeDirectory(Directory string) {
+func changeDirectory(command []string) {
 
-	Directory = "../" + Directory
-	os.Chdir(Directory)
+	if len(command) == 1 {
+
+	} else {
+		if command[1] == "." {
+
+		} else {
+			//create new directory path
+			newDirectory := command[1]
+
+			//	fmt.Println(os.Getenv("HOME"))
+			os.Chdir(newDirectory)
+
+		}
+
+	}
 
 }

@@ -7,7 +7,7 @@ Unix based shell built in Go-Lang
   <b>rm</b> 
  <br> <b>ls</b> </br>
   <b>pwd</b> 
-  <b>touch</b>
+  <br><b>touch</b></br>
   </br> <b>mkdir</b> </br>
 
   ## Custom Commands

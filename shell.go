@@ -48,6 +48,10 @@ func main() {
 
 			rm(commandArray[1])
 
+		} else if commandArray[0] == "whoami" {
+
+			whoami()
+
 		} else if commandArray[0] == "end" {
 
 			break

@@ -1,7 +1,7 @@
 # Go-Shell
 Unix based shell built in Go-Lang
 
-## Commands Supported
+## Unix Commands Supported
 
   <br> <b>cd</b> </br>
  <br> <b>rm</b> </br>

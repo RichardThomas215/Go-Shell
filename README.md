@@ -11,5 +11,7 @@ Unix based shell built in Go-Lang
    <b>mkdir</b> 
 
   ## Custom Commands
-   <b>zip</b>
+   <b>zip</b> - puts all files listed into a zip file called files.zip <br></br>
+    <li>ex: zip LS.go touch.go pwd.go ..</li>
+
 

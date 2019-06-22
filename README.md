@@ -10,6 +10,7 @@ Unix based shell built in Go-Lang
  <br> <b>pwd</b> </br>
  <b>touch</b>
    <br> <b>mkdir</b> </br>
+   <b> whoami</b>
 
   ## Custom Commands
    <b>zip</b> - puts all files listed into a zip file called files.zip

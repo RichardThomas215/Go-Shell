@@ -10,6 +10,6 @@ Unix based shell built in Go-Lang
   <br> <b>touch</b> </br>
   </br> <b>mkdir</b> </br>
 
-  ### custom commands
+  ## Custom Commands
    <b>zip</b>
 

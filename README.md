@@ -7,8 +7,8 @@ Unix based shell built in Go-Lang
  <b>rm</b> 
  <br> <b>ls</b> </br>
  <b>ls -al</b>
- <br> <b>pwd</b> </br>
- <b>cat</b>
+ <br> <b>cat</b> </br>
+ <b>pwd</b>
  <br> <b>touch</b> </br>
  <b>mkdir</b> 
  <br> <b>whoami</b> </br>

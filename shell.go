@@ -44,6 +44,10 @@ func main() {
 
 			touch(commandArray[1])
 
+		} else if commandArray[0] == "cat" {
+
+			cat(commandArray[1])
+
 		} else if commandArray[0] == "rm" {
 
 			rm(commandArray[1])

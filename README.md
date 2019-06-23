@@ -10,7 +10,7 @@ Unix based shell built in Go-Lang
  <br> <b>pwd</b> </br>
  <b>cat<b>
  <br> <b>touch</b> </br>
- <br> <b>mkdir</b> </br>
+ <b>mkdir</b> 
  <b> whoami</b>
 
   ## Custom Commands

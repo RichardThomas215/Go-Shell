@@ -11,7 +11,7 @@ Unix based shell built in Go-Lang
  <b>cat</b>
  <br> <b>touch</b> </br>
  <b>mkdir</b> 
- <b> whoami</b>
+ <br> <b>whoami</b> </br>
 
   ## Custom Commands
    <b>zip</b> - puts all files listed into a zip file called files.zip
